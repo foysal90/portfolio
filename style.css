@@ -11,36 +11,37 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+   
     background-color: rgba(255, 217, 0, 0);
     height: 60px;
     width: 100%;
     padding: 4px;
     position: fixed;
+    
     z-index: 100;
     
     
     
     
     
+    
 
 }
 
-.wrapper {
+ .wrapper {
     position: relative;
     width: 100%;
     height: 100%;
     overflow: hidden;
     background: linear-gradient(90deg, rgba(2,0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100% );
 
-} 
+}  
 
 .navbar a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.543);
     
 }
- 
 
 .navbar a:hover {
     cursor: pointer;
@@ -382,6 +383,13 @@ body {
      background-color: rgba(240, 255, 240, 0.303);
  }
 
+ .skills:hover {
+     background-color: teal;
+     color: white;
+     transition: 10s;
+     transform: scale(1.1);
+ }
+
  .contact {
      text-align: center;
      margin-left: 18%;
@@ -437,7 +445,7 @@ body {
     
     margin: 50px auto;
     text-align: center;
-    border: 1px solid;
+    border: 1px solid white;
     width: 70%;
     border-style: none;
     background-color: rgba(192, 192, 192, 0.098);
@@ -459,12 +467,17 @@ body {
 
 }
 
+.bi-facebook:hover {
+    background-color: white;
+}
+
 .bi-linkedin {
     color: #00a0dc;
 }
 
 .bi-facebook {
     color: #3B5998;
+    background-color: white;
 }
 
 .bi-youtube {
@@ -481,7 +494,7 @@ body {
 .btn:hover {
     
     transition: 2s linear;
-    transform: scale(1.5);
+    transform: scale(1.3);
 
 }
 .btn {
@@ -491,6 +504,7 @@ body {
     background-color: white;
     padding: 2px;
     border-style: none;
+    margin: 10px;
 
 }
 
@@ -499,6 +513,8 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
+   padding-left: 180px;
+    
     
 }
 
@@ -520,3 +536,39 @@ body {
 .footer-menu a:hover {
     color: grey;
 }
+
+/* project */
+
+.projects {
+    margin: 60px auto;
+    width: 80%;
+}
+
+.font-projects {
+    text-align: center;
+    
+    
+}
+
+.foy img {
+    width: 100%;
+    padding: 20px;
+}
+
+.foy {
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 1px 0px 20px 1px white;
+    color: goldenrod;
+    border-radius: 50px;
+}
+
+.foy:hover {
+    background-color: rgba(218, 165, 32, 0.495);
+    color: rgba(65, 105, 225, 0.543);
+    transition: 10s linear;
+    transform: scale(1.1);
+}
+
