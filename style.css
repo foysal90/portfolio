@@ -4,14 +4,19 @@
     box-sizing: border-box;
 }
 
-body {
+/*.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(2,0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100% );
 
-}
+} */
 
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: rgba(226, 220, 213, 0.29);
+    background-color: rgba(255, 217, 0, 0);
     height: 60px;
     width: 100%;
     padding: 4px;
@@ -22,8 +27,8 @@ body {
 .navbar a {
     text-decoration: none;
     margin: 6px;
-    color: rgba(0, 0, 0, 0.571);
-    background-color:rgba(226, 220, 213, 0.125);
+    color: rgba(3, 1, 1, 0.564);
+    background-color:rgba(226, 220, 213, 0);
     height: 35%;
     
 }
@@ -52,5 +57,121 @@ body {
 .about-me {
     text-align: center;
     font-size: 15px;
-    margin-top: 20px;
+    margin-left: 40px;
+    border: 1px solid;
+    width: 90%;
+    box-shadow: 1px 0px 20px 1px rgb(51, 51, 51);
+    border-radius: 50px;
+    padding: 20px;
 }
+
+.profile-desc {
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 0.1em;
+    border: 1px solid rgb(212, 210, 210);
+    width: 90%;
+    margin-left: 40px;
+    box-shadow: 1px 0px 20px 1px white;
+    border-radius: 50px;
+}
+
+.profile-desc h1 {
+    color: grey;
+    margin-bottom: 10px;
+    
+}
+
+.profile-desc p {
+    font-style: italic;
+    color: rgb(217, 230, 230);
+}
+
+.name {
+    background-color: rgba(217, 230, 230, 0.735);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+    
+}
+.name:hover {
+    background-color: snow;
+    color: slateblue;
+    transition: 3s;
+    transform: scale(1.5);
+}
+.address {
+    background-color: rgba(217, 230, 230, 0.735);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.address:hover {
+    background-color: teal;
+    transition: 3s;
+    color: white;
+    transform: scale(1.1);
+}
+
+.email  {
+    background-color: rgba(217, 230, 230, 0.735);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-decoration: none;
+
+} 
+
+.email a {
+    text-decoration: none;
+}
+.email:hover {
+    background-color: slateblue;
+    transition: 5s;
+    transform: scale(1.2);
+}
+
+.email a:hover {
+    color: white;
+    transition: 2s;
+}
+.call {
+    background-color: rgba(217, 230, 230, 0.735);
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-decoration: none;
+    
+}
+
+.call:hover {
+    background-color: royalblue;
+    transition: 2s;
+    transform: scale(1.3);
+    
+}
+
+.call a {
+    text-decoration: none;
+}
+
+.call a:hover {
+    color: white;
+    transition: 2s linear;
+}
+
+.about-me img:hover {
+    transform: scale(1.4);
+    transition: 8s;
+}
+
+
