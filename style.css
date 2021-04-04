@@ -8,7 +8,7 @@ body {
     width: 100%;
     height: 100%;
 }
-
+/* navbar */
 .navbar {
     display: flex;
    
@@ -20,12 +20,6 @@ body {
     
     z-index: 100;
     
-    
-    
-    
-    
-    
-
 }
 
  .wrapper {
@@ -59,6 +53,7 @@ body {
     
 }
 
+/* about me starts here */
 .about-me img {
     width: 80%;
     height: 40%;
@@ -76,6 +71,8 @@ body {
     border-radius: 50px;
     padding: 20px;
 }
+
+/* profile */
 .profile {
     
 }
@@ -215,7 +212,9 @@ body {
     transform: scale(1.4);
     transition: 8s;
 }
+/* about me emds here */
 
+/* skills */
 .skills-container {
     padding-left: 45px;
     
@@ -390,6 +389,10 @@ body {
      transform: scale(1.1);
  }
 
+ /* skills ends here */
+
+
+ /* contact starts here */
  .contact {
      text-align: center;
      margin-left: 18%;
@@ -466,30 +469,46 @@ body {
     color: #6e5494;
 
 }
-
-.bi-facebook:hover {
+.bi-github:hover {
     background-color: white;
 }
+
 
 .bi-linkedin {
     color: #00a0dc;
 }
 
+.bi-linkedin:hover {
+    background-color: white;
+}
+
 .bi-facebook {
     color: #3B5998;
+   
+}
+.bi-facebook:hover {
     background-color: white;
 }
 
 .bi-youtube {
     color: #FF0000;
 }
+.bi-youtube:hover {
+    background-color: white;
+}
 
 .bi-instagram {
     color: #8a3ab9;
 }
-
+.bi-instagram:hover {
+    background-color: #3F729B;
+}
 .bi-twitter {
     color: #00ACEE;
+}
+
+.bi-twitter:hover {
+    background-color: white;
 }
 .btn:hover {
     
@@ -507,7 +526,9 @@ body {
     margin: 10px;
 
 }
+/* contact ends here */
 
+/* footer */
 .footer {
     background-color: black;
     color: white;
