@@ -346,5 +346,52 @@
      background-color: rgba(240, 255, 240, 0.303);
  }
 
+ .contact {
+     text-align: center;
+     margin-left: 30%;
+    padding-bottom: 40px;
+     width: 300px;
+     height: 20%;
+     border: 1px solid;
+     border-radius: 50px;
+     box-shadow: 1px 0px 20px 1px grey;
+     
+     
 
+ }
+
+ .contact input , textarea {
+     text-align: center;
+     margin: 10px;
+     padding: 5px;
+     text-transform: capitalize;
+     background-color: rgba(248, 246, 246, 0.269);
+     
+ }
+.contact:hover{
+    transition: 7s;
+    transform: scale(1.1);
+    background-color: royalblue;
+    color: white;
+}
+.contact input , textarea:hover {
+    transition: 10s;
+    transform: scale(1.1);
+    color: white;
+}
+
+.contact button {
+    color: white;
+    background-color: rgb(0, 128, 128);
+    margin: 10px;
+    width: 20%;
+    border-radius: 50px;
+}
+
+.contact button:hover{
+    background-color: rgba(0, 128, 128, 0.406);
+    transition: 4s;
+    color: snow;
+    transform: scale(1.1 );
+}
 
