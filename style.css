@@ -7,11 +7,12 @@
 body {
     width: 100%;
     height: 100%;
+    font-family: monospace , sans-serif;
 }
 /* navbar */
 .navbar {
     display: flex;
-   
+   justify-content: flex-end;
     background-color: rgba(255, 217, 0, 0);
     height: 60px;
     width: 100%;
@@ -33,7 +34,10 @@ body {
 
 .navbar a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.543);
+    color: white;
+    font-weight: bold;
+    
+    
     
 }
 
@@ -45,13 +49,28 @@ body {
 }
 
 .nav-heading {
-    font-size: 10px;
+    font-size: 5px;
     margin: 5px;
-    letter-spacing: 0.1em;
-    font-style: italic;
-    color: steelblue;
+    box-shadow: 2px 2px 20px 10px white;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+   text-transform: uppercase;
+   border-style: none;
+  
     
 }
+
+.nav-heading:hover{
+    transition: 5s linear;
+    transform: scale(1.1);
+    background-color: navy;
+    color: white;
+}
+
+
 
 /* about me starts here */
 .about-me img {
@@ -70,6 +89,7 @@ body {
     box-shadow: 1px 0px 20px 1px white;
     border-radius: 50px;
     padding: 20px;
+    border-style: none;
 }
 
 .about-me h1 {
@@ -78,8 +98,9 @@ body {
     padding: 10px;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.331);
-    color: goldenrod;
+    color: #ffff00;
     box-shadow: 1px 0px 20px 1px white;
+    border-style: none;
 }
 
 .about-me h1:hover {
@@ -91,7 +112,7 @@ body {
 
 /* profile */
 .profile {
-    
+   
 }
 
 .profile-desc {
@@ -100,9 +121,11 @@ body {
     letter-spacing: 0.1em;
     border: 1px solid rgb(212, 210, 210);
     width: 90%;
-    margin: 20px;
+    margin: 60px 20px 20px 20px ;
     box-shadow: 1px 0px 20px 1px white;
     border-radius: 50px;
+    border-style: none;
+
     
 }
 
@@ -132,8 +155,9 @@ body {
     padding: 10px;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.331);
-    color: goldenrod;
+    color: #ffff00;
     box-shadow: 1px 0px 20px 1px white;
+    border-style: none;
 }
 
 .myself:hover {
@@ -361,6 +385,14 @@ body {
     }
 }
 
+.skills-container li.heroku::after{
+    animation-name: heroku;
+}
+@keyframes heroku{
+    to{
+        width: 50%;
+    }
+}
  
 
 
@@ -376,6 +408,7 @@ body {
      padding: 20px;
      margin: 20px;
      box-shadow: 1px 0px 20px 1px white;
+     border-style: none;
  }
 
  .card:hover {
@@ -421,6 +454,7 @@ body {
      box-shadow: 1px 0px 20px 1px white;
      
      
+     
 
  }
 
@@ -429,11 +463,12 @@ body {
     margin: 18%;
    padding: 20px;
     width: 180px;
-    color: goldenrod;
+    color: #ffff00 ;
     border: 1px solid white;
     border-radius: 50px;
     box-shadow: 1px 0px 20px 1px white;
     background-color: rgba(255, 255, 255, 0.646);
+    border-style: none;
     
  }
 
@@ -492,6 +527,7 @@ body {
     background-color: rgba(192, 192, 192, 0.098);
     border-radius: 50px;
     box-shadow: 1px 0px 20px 1px white;
+    border-style: none;
    
 
 }
@@ -568,6 +604,8 @@ body {
 
 /* footer */
 .footer {
+
+    
     background-color: black;
     color: white;
     padding: 20px;
@@ -577,10 +615,11 @@ body {
     
 }
 
+
 .footer-menu a {
-    display: block;
+    display: flexbox;
     text-decoration: none;
-    margin: 10px;
+    margin: 5px;
 }
 
 .bi-heart-fill {
@@ -589,7 +628,7 @@ body {
 
 .footer-desc {
     font-size: 8px;
-    color: mediumslateblue;
+    color: yellow;
 }
 
 .footer-menu a:hover {
@@ -610,8 +649,9 @@ body {
     padding: 10px;
     border-radius: 50px;
     background-color: rgba(255, 255, 255, 0.331);
-    color: goldenrod;
+    color: #ffff00;    ;
     box-shadow: 1px 0px 20px 1px white;
+    border-style: none;
 }
 
 .font-projects:hover {
@@ -632,8 +672,9 @@ body {
     text-align: center;
     margin: 10px;
     box-shadow: 1px 0px 20px 1px white;
-    color: goldenrod;
+    color: #ffff00;
     border-radius: 50px;
+    border-style: none;
 }
 
 .foy:hover {
@@ -642,5 +683,4 @@ body {
     transition: 10s linear;
     transform: scale(1.1);
 }
-
 
