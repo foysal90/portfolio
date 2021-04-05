@@ -72,6 +72,23 @@ body {
     padding: 20px;
 }
 
+.about-me h1 {
+    border: 1px solid white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.331);
+    color: goldenrod;
+    box-shadow: 1px 0px 20px 1px white;
+}
+
+.about-me h1:hover {
+    background-color: snow;
+    color: slateblue;
+    transition: 3s;
+    transform: scale(1.1);
+}
+
 /* profile */
 .profile {
     
@@ -407,12 +424,33 @@ body {
 
  }
 
+ .contact h2 {
+    text-align: center;
+    margin: 18%;
+   padding: 20px;
+    width: 180px;
+    color: goldenrod;
+    border: 1px solid white;
+    border-radius: 50px;
+    box-shadow: 1px 0px 20px 1px white;
+    background-color: rgba(255, 255, 255, 0.646);
+    
+ }
+
+ .contact h2:hover {
+     background-color: steelblue;
+     color: teal;
+     transition: 5s linear;
+     transform: scale(1.1);
+ }
+
  .contact input , textarea {
      text-align: center;
      margin: 10px;
      padding: 5px;
      text-transform: capitalize;
      background-color: rgba(248, 246, 246, 0.269);
+     
      
  }
 .contact:hover{
@@ -567,8 +605,20 @@ body {
 
 .font-projects {
     text-align: center;
-    
-    
+    border: 1px solid white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.331);
+    color: goldenrod;
+    box-shadow: 1px 0px 20px 1px white;
+}
+
+.font-projects:hover {
+    background-color: snow;
+    color: slateblue;
+    transition: 3s;
+    transform: scale(1.1);
 }
 
 .foy img {
@@ -592,4 +642,5 @@ body {
     transition: 10s linear;
     transform: scale(1.1);
 }
+
 
