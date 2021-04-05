@@ -689,11 +689,8 @@ body {
 
 
 /* new style */
-/* .navbar {
-    color: white;
-}
 
-.container a {
+/* .container a {
     text-decoration: none;
     padding: 20px;
     color: white;
@@ -717,7 +714,7 @@ body {
    color: yellow;
    
   
-} */
+} */ 
 
 .collapse  a {
     display: flex;
