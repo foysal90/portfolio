@@ -695,8 +695,11 @@ body {
 .foy img {
     width: 100%;
     padding: 20px;
-    height: 50%;
+    height: 100%;
 }
+
+
+
 
 .foy {
     border: 1px solid white;
