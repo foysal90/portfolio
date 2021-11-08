@@ -695,6 +695,7 @@ body {
 .foy img {
     width: 100%;
     padding: 20px;
+    height: 50%;
 }
 
 .foy {
@@ -713,6 +714,24 @@ body {
     color: rgba(65, 105, 225, 0.543);
     transition: 10s linear;
     transform: scale(1.1);
+}
+
+.foys {
+
+
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 1px 0px 20px 1px white;
+    color: #ffff00;
+    border-radius: 50px;
+    border-style: none;
+    
+}
+
+.provid {
+    background-color: black;
 }
 
 
