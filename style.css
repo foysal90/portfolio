@@ -12,6 +12,7 @@ body {
     
 }
 
+
 /* navbar */
 .container {
     font-weight: bold;
@@ -24,7 +25,7 @@ body {
 
 .container a {
     border: 1px solid;
-   border-radius: 50px;
+    border-radius: 50px;
     margin: 5px;
     border-style: none;
     padding: 1px;
@@ -32,9 +33,10 @@ body {
 }
 
 .container a:hover {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.432);
     transition: 3s;
     transform: scale(1.1);
+    text-align: center;
 }
 
 /* navbar */
