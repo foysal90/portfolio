@@ -2,7 +2,7 @@
 
 This portfolio is a small project using HTML / CSS and Boostrap, I will be using this to ShowCase my projects! 
 
-[Live Heroku Deployment](https://portfolio-foysal.herokuapp.com/)
+[Live  Deployment](https://foysal90.github.io/portfolio/)
 
 ## Technologies used
 
