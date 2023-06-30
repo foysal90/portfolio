@@ -1,404 +1,273 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
     box-sizing: border-box;
-    
+    font-family: 'Fira Sans', sans-serif;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    font-family: monospace , sans-serif;
-    background-color: #dddddd;
-    /* background-image: url(image/db.jpeg); */
-    
+body{
+    margin: 0;
 }
 
-
-
-.banner{
-
-    position: relative;
-    width: 100%;
-    height: 808px;
-
-    background: linear-gradient(90deg, rgba(235,51,51,100%)
-    0%,rgba(106, 90, 205,100%) 100%
-    );
-
-
-    
-}
-
-.banner > img {
-    width: 100%;
-    position: absolute;
-    background-size: cover;
-  
-}
-.banner-desc{
-    position: absolute;
-    right: 10%;
-    top: 450px;
-    color: white;
-    
-}
-
-.banner-desc h1 {
-    font-weight: 800;
-    font-size: 45px;
-}
-
-.banner-desc h2,h3 {
-    font-size: medium;
-    opacity: 0.4;
-    word-spacing: 0.3rem;
-    margin: 2px;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* navbar */
-.container {
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    /* background-color: rgba(0, 0, 128, 0.132); */
-    
-    
-    
-}
-
-.container a {
-    border: 1px solid;
-    border-radius: 50px;
-    margin: 5px;
-    border-style: none;
-    padding: 1px;
-    
-}
-
-.container a:hover {
-    background-color: rgba(0, 128, 0, 0.432);
-    transition: 3s;
-    transform: scale(1.1);
+h1{
+    font-size: 2.5rem;
     text-align: center;
 }
 
-/* navbar */
-/* .navbar {
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.dotted-hr{
+    border: dotted 6px white;
+    border-bottom: none;
+    margin: 20px auto;
+    width: 70px;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/* for mobile  */
+[class*="col-"]{
+    width: 100%;
+}
+
+
+/* navbar design starts here  */
+
+.navbar{
+    background-color: #40868b;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.navbar h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.navbar-menu{
     display: flex;
-   justify-content: flex-end;
-    background-color: rgba(255, 217, 0, 0);
-    height: 60px;
-    width: 100%;
-    padding: 4px;
-    position: fixed;
-    
-    z-index: 100;
-    
-} */
+    flex-direction: column;
+    text-transform: uppercase;
+}
 
-   /* .wrapper {
+.navbar-menu a{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-menu a:hover{
+    background-color: gray;
+}
+
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* navbar design ends here  */
+
+
+
+/* profile design starts from here  */
+
+.profile{
+    padding: 130px 10px;
     position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: linear-gradient(90deg, rgba(2,0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100% );
-
-}     */
-
- /* .navbar a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    
-    
-    
+    text-align: center;
 }
 
-.navbar a:hover {
+.profile .top-weather-icon{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+}
+
+.profile .top-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile-desc h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+
+.profile-desc p{
+    color: gray;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: 90%;
+}
+
+
+.profile .bottom-weather-icon{
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    transition: transform 2s;
+}
+
+.profile .bottom-weather-icon:hover{
+    transform: rotate(360deg);
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* profile design ends here  */
+
+
+/* about me design starts here  */
+
+
+.about-me{
+    background-color: #39a4ac;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutme-image img{
+    border: 5px solid white;
+    border-radius: 50%;
+    height: 220px;
+    width: 200px;
+}
+
+.about-me p{
+    text-align: center;
+}
+
+.about-me a{
+    font-size: 1.2rem;
+}
+
+.cv-button{
+    background-color: #052d2f;
+    color: white;
+    border:none;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1rem;
     cursor: pointer;
-    color: grey;
-    text-decoration: none;
-    
-} */
-
-.nav-heading {
-    font-size: 5px;
-    margin: 50px auto;
-    box-shadow: 2px 2px 20px 10px white;
-    border: 1px solid white;
-    border-radius: 50px;
-    color: yellow;
-    font-weight: bold;
     text-align: center;
-   text-transform: uppercase;
-   border-style: none;
-   padding: 6px;
-  
-    
-}
-
-.nav-heading:hover{
-    transition: 5s linear;
-    transform: scale(1.1);
-    /* background-color: navy; */
-    background-color: #312244;
-    color: white;
-}
- 
-
-
-/* about me starts here */
-.about-me img {
-    width: 80%;
-    height: 40%;
-    border-radius: 20px;
-    margin-top: 10px;
-}
-
-.about-me {
-    text-align: center;
-    font-size: 15px;
-    margin: 20px;
-    border: 1px solid white;
-    width: 90%;
-    box-shadow: 1px 0px 20px 1px white;
-    border-radius: 50px;
-    padding: 20px;
-    border-style: none;
-    background-color: #312244;
-}
-
-.about-me h1 {
-    border: 1px solid white;
     margin: 10px;
+}
+
+
+
+.about-me::after{
+    clear: both;
+    display: table;
+    content: '';
+}
+
+/* about me design ends here  */
+
+
+
+/* professional-experience starts here */
+
+.professional-experience{
+    padding: 1% 0%;
+}
+
+.professional-experience .card{
+    background-color: #a39e9e;
+    border-radius: 5px;
     padding: 10px;
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.331);
-    color: #ffff00;
-    box-shadow: 1px 0px 20px 1px white;
-    border-style: none;
+    transition: 0.3s;
+    /* height: 700px; */
 }
 
-.about-me h1:hover {
-    background-color: snow;
-    color: slateblue;
-    transition: 3s;
-    transform: scale(1.1);
+.card:hover{
+    box-shadow: 0 4px 8px 5px black;
 }
 
-/* profile */
-.profile {
-    
-   
-}
-
-.profile-desc {
+.card-icon{
     text-align: center;
-    padding: 20px;
-    letter-spacing: 0.1em;
-    border: 1px solid rgb(212, 210, 210);
-    width: 90%;
-    margin: 60px 20px 20px 20px ;
-    box-shadow: 1px 0px 20px 1px white;
-    border-radius: 50px;
-    border-style: none;
-    background-color: #33415c;
-    
-
-    
 }
 
-.profile-desc:hover {
-    transition: 3s;
-    transform: scale(1.1);
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
 }
 
-.profile-desc h1 {
-    color: grey;
-    margin-bottom: 10px;
-    
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 15px;
 }
 
-.profile-desc p {
-    font-style: italic;
-    color: rgb(217, 230, 230);
-}
-
-.bio {
-    color: teal;
-    
-}
-.myself {
-    border: 1px solid white;
-    margin: 10px;
+.card-title h2{
+    background-color: #616161;
+    color: white;
     padding: 10px;
-    border-radius: 50px;
-    background-color: rgba(255, 255, 255, 0.331);
-    color: #ffff00;
-    box-shadow: 1px 0px 20px 1px white;
-    border-style: none;
+    text-align: center;
 }
 
-.myself:hover {
-    background-color: snow;
-    color: slateblue;
-    transition: 3s;
-    transform: scale(1.1);
+.skills-container{
+    padding-right: 45px;
 }
 
-.name {
-    background-color: rgba(217, 230, 230, 0.735);
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    margin-bottom: 10px;
-    padding: 5px;
-    
-}
-.name:hover {
-    background-color: snow;
-    color: slateblue;
-    transition: 3s;
-    transform: scale(1.1);
-}
-.address {
-    background-color: rgba(217, 230, 230, 0.735);
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    margin-bottom: 10px;
-    padding: 5px;
-}
-
-.address:hover {
-    background-color: teal;
-    transition: 3s;
-    color: white;
-    transform: scale(1.1);
-}
-
-.email  {
-    background-color: rgba(217, 230, 230, 0.735);
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    margin-bottom: 10px;
-    padding: 5px;
-    text-decoration: none;
-
-} 
-
-.email a {
-    text-decoration: none;
-}
-.email:hover {
-    background-color: slateblue;
-    transition: 5s;
-    transform: scale(1.1);
-}
-
-.email a:hover {
-    color: white;
-    transition: 2s;
-}
-.call {
-    background-color: rgba(217, 230, 230, 0.735);
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    margin-bottom: 10px;
-    padding: 5px;
-    text-decoration: none;
-    
-}
-
-.call:hover {
-    background-color: royalblue;
-    transition: 2s;
-    transform: scale(1.1);
-    
-}
-
-.call a {
-    text-decoration: none;
-}
-
-.call a:hover {
-    color: white;
-    transition: 2s linear;
-}
-
-.about-me img:hover {
-    transform: scale(1.4);
-    transition: 8s;
-}
-/* about me emds here */
-
-/* skills */
-.skills-container {
-    padding-left: 45px;
-    background-color: #003d5b;
-    /* background-color: #003554 !important; */
-    /* background-color: #3a5a40 ; */
-    background-color: #240046 !important;
-    color: grey;
-    
-    
-}
-.skills-container li {
-   list-style: none;
-   font-weight: bolder;
-   margin: 30px 10px;
-   position: relative;
-   text-transform: uppercase;
-   text-align: center;
-   
-   
-   
+.skills-container li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
 }
 
 .skills-container li::before{
-    content: '';
-    position: absolute;
-    top: calc(100% + 5px);
-    width: 100%;
-    height: 5px;
-    left: 0;
-    background-color: rgb(86,86,153,.5);
-    border-radius: 1000px;
-    
- }
+   content: '';
+   position: absolute;
+   top: calc(100% + 5px);
+   left: 0;
+
+   width: 100%;
+   height: 10px;
+   background-color: rgb(86,86,153,.5);
+   border-radius: 1000px;
+}
 
 
 .skills-container li::after{
     content: '';
     position: absolute;
     top: calc(100% + 5px);
-    width: 0%;
-    height: 5px;
     left: 0;
-    /* background-color: rgba(86, 86, 153, 0.461); */
-    background-color: #fff;
-   
+ 
+    width: 0;
+    height: 10px;
+    background-color: rgb(86,86,153,1);
     border-radius: 1000px;
-    
 
-    animation-duration: 10s;
+    animation-duration: 3s;
     animation-delay: 2s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
@@ -407,359 +276,200 @@ body {
 
  .skills-container li.html::after{
      animation-name: html;
-
  }
 
- @keyframes html {
+ @keyframes html{
      to{
          width: 90%;
      }
  }
 
  .skills-container li.css::after{
-     animation-name: css;
+    animation-name: css;
  }
+ 
  @keyframes css{
      to{
-         width: 70%;
+         width: 80%;
      }
  }
-
- .skills-container li.python::after{
-    animation-name: python;
-}
-@keyframes python{
-    to{
-        width: 50%;
-    }
-}
-
-.skills-container li.react::after{
-    animation-name: react;
-}
-@keyframes react{
-    to{
-        width: 80%;
-    }
-}
-
-.skills-container li.redux::after{
-    animation-name: redux;
-}
-@keyframes redux{
-    to{
-        width: 75%;
-    }
-}
-
-.skills-container li.js::after{
+ 
+ .skills-container li.bootstrap::after{
+     animation-name: bs;
+  }
+  
+  @keyframes bs{
+      to{
+          width: 85%;
+      }
+  }
+ 
+ .skills-container li.js::after{
     animation-name: js;
-}
-@keyframes js{
-    to{
-        width: 60%;
-    }
-}
-
-.skills-container li.django::after{
-    animation-name: django;
-}
-@keyframes django{
-    to{
-        width: 50%;
-    }
-}
-
-.skills-container li.sql::after{
-    animation-name: sql;
-}
-@keyframes sql{
-    to{
-        width: 55%;
-    }
-}
-
-.skills-container li.git::after{
-    animation-name: git;
-}
-@keyframes git{
-    to{
-        width: 90%;
-    }
-}
-
-.skills-container li.heroku::after{
-    animation-name: heroku;
-}
-@keyframes heroku{
-    to{
-        width: 50%;
-    }
-}
+ }
+ 
+ @keyframes js{
+     to{
+         width: 75%;
+     }
+ }
+ 
+ .skills-container li.jquery::after{
+     animation-name: jq;
+  }
+  
+  @keyframes jq{
+      to{
+          width: 80%;
+      }
+  }
+ 
+ 
+ 
+ .skills-container li.node::after{
+    animation-name: node;
+ }
+ 
+ @keyframes node{
+     to{
+         width: 85%;
+     }
+ }
+ 
+ .skills-container li.express::after{
+     animation-name: express;
+  }
+  
+  @keyframes express{
+      to{
+          width: 75%;
+      }
+  }
+ 
+  .skills-container li.git::after{
+     animation-name: github;
+  }
+  
+  @keyframes github{
+      to{
+          width: 75%;
+      }
+  }
+  
+ 
+ .skills-container li.react::after{
+    animation-name: react;
+ }
+ 
+ @keyframes react{
+     to{
+         width: 65%;
+     }
+ }
  
 
 
 
+.professional-experience::after{
+   clear: both;
+   display: table;
+   content: '';
+}
+/* professional-experience ends here  */
 
 
+/* achievement-contact starts from here  */
+.achievemnet-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: white;
+}
 
-
-.card {
-     border: 1px solid white;
-     width: 90%;
-     border-radius: 50px;
-     padding: 20px;
-     margin: 20px;
-     box-shadow: 1px 0px 20px 1px white;
-     border-style: none;
-     background-color: #002855;
-    
-    
- }
-
- .card:hover {
-     transform: scale(1.1);
-     transition: 7s;
-     background-color: white;
-     color: rgba(0, 0, 255, 0.577);
- }
-
- .skills {
-     text-align: center;
-     border: 1px solid white;
-     margin: 10px;
-     width: 99%;
-     height: 30px;
-     border-radius: 80px;
-     text-transform: uppercase;
-     font-weight: bolder;
-     font-family: monospace, sans-serif;
-     letter-spacing: 0.1em;
-      background-color: rgba(240, 255, 240, 0.303); 
-     
- }
-
- .skills:hover {
-     background-color: teal;
-     color: white;
-     transition: 10s;
-     transform: scale(1.1);
- }
-
- /* skills ends here */
-
-
- /* contact starts here */
- .contact {
-     text-align: center;
-     margin-left: 18%;
-    padding-bottom: 40px;
-     width: 300px;
-     height: 20%;
-     border: 1px solid white;
-     border-radius: 50px;
-     box-shadow: 1px 0px 20px 1px white;
-     
-     
-     
-
- }
-
- .contact h2 {
+.contact{
     text-align: center;
-    margin: 18%;
-   padding: 20px;
-    width: 180px;
-    color: #ffff00 ;
-    border: 1px solid white;
-    border-radius: 50px;
-    box-shadow: 1px 0px 20px 1px white;
-    background-color: rgba(255, 255, 255, 0.646);
-    border-style: none;
-    
- }
-
- .contact h2:hover {
-     background-color: steelblue;
-     color: teal;
-     transition: 5s linear;
-     transform: scale(1.1);
- }
-
- .contact input , textarea {
-     text-align: center;
-     margin: 10px;
-     padding: 5px;
-     text-transform: capitalize;
-     background-color: rgba(248, 246, 246, 0.269);
-     
-     
- }
-.contact:hover{
-    transition: 10s;
-    transform: scale(1.1);
-    background-color: royalblue;
-    color: white;
-    
-}
-.contact input , textarea:hover {
-    transition: 10s;
-    transform: scale(1.1);
-    color: white;
 }
 
-.contact button {
-    color: white;
-    background-color: rgb(0, 128, 128);
-    margin: 10px;
-    width: 20%;
-    border-radius: 50px;
-}
-
-.contact button:hover{
-    background-color: rgba(0, 128, 128, 0.406);
-    transition: 4s;
-    color: snow;
-    transform: scale(1.1 );
-}
-
-.contact-links {
-    display: flexbox;
-    
-    margin: 50px auto;
-    text-align: center;
-    border: 1px solid white;
-    width: 70%;
-    border-style: none;
-    /* background-color: rgba(192, 192, 192, 0.098); */
-    /* background: linear-gradient(to right, #e2136efe, #ec1c24b3, #9f1cdcb3);
-    background: #33415c !important; */
-    border-radius: 50px;
-    box-shadow: 1px 0px 20px 1px white;
-    border-style: none;
-   
-
-}
-
-.icons button {
-    margin: 10px;
-   
-
-    
-}
-
-.bi-github {
-    color: #6e5494;
-
-}
-.bi-github:hover {
-    background-color: white;
-}
-
-
-.bi-linkedin {
-    color: #00a0dc;
-}
-
-.bi-linkedin:hover {
-    background-color: white;
-}
-
-.bi-facebook {
-    color: #3B5998;
-   
-}
-.bi-facebook:hover {
-    background-color: white;
-}
-
-.bi-youtube {
-    color: #FF0000;
-}
-.bi-youtube:hover {
-    background-color: white;
-}
-
-.bi-instagram {
-    color: #8a3ab9;
-}
-.bi-instagram:hover {
-    background-color: #3F729B;
-}
-.bi-twitter {
-    color: #00ACEE;
-}
-
-.bi-twitter:hover {
-    background-color: white;
-}
-.btn:hover {
-    
-    transition: 2s linear;
-    transform: scale(1.3);
-
-}
-.btn {
-    border: none;
-    border-radius: 20px;
-    font-size: 20px;
-    background-color: white;
-    padding: 2px;
-    border-style: none;
-    margin: 10px;
-
-}
-/* contact ends here */
-
-/* footer */
-.footer {
-    height: 15vh;
+.contact input, textarea{
     width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
 
-     
-    background: linear-gradient(90deg, rgba(235,51,51,100%)
-    0%,rgba(106, 90, 205,100%) 100%
-    );
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
 
-     background: linear-gradient(90deg, rgba(2,0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100% ) ;
-    background: linear-gradient(to right, #e2136efe, #ec1c24b3, #9f1cdcb3) !important;
-    background: #33415c ;
-     background:linear-gradient(90deg, rgba(10, 185, 234, 0.545)
-    0%,rgba(106, 90, 205,0.7) 
-    );
 
+.contact-links{
+    text-align: center;
+}
+
+.media-buttons .btn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 5px;
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+}
+.btn:hover{
+    background-color: gray;
+}
+
+.achievemnet-contact::after{
+    clear: both;
+    display: table;
+    content: '';
+ }
+
+/* achievement-contact ends here  */
+
+/* footer starts from here  */
+.footer{
+    background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
-    padding-left: 180px;
-    font-size: large;
-    
-    
-    
+    font-size: 0.8rem;
+
+}
+
+.footer-menu a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.footer-menu a:hover{
+    color: gray;
+}
+
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
 }
 
 
-.footer-menu a {
-    display: flexbox;
-    text-decoration: none;
-    margin: 5px;
-    justify-content: center;
-    align-items: center;
-}
+/* footer ends here  */
 
 
-.bi-heart-fill {
-    color: red;
-}
 
-/* .footer-desc {
-    font-size: 8px;
-    color: yellow;
-}
 
-.footer-menu a:hover {
-    color: grey;
-} */
+
 
 /* project */
 
@@ -834,69 +544,4 @@ body {
     background-color: black;
     background: linear-gradient(90deg, rgba(2,0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100% );
 }
-
-
-
-
-/* new style */
-
-/* .container a {
-    text-decoration: none;
-    padding: 20px;
-    color: white;
-    font-weight: bold;
- 
-}
-
-
-.fa {
-    border: 1px solid red;
-    font-size: 5px;
-    margin: 5px;
-    box-shadow: 2px 2px 20px 10px white;
-    border: 1px solid white;
-    border-radius: 50px;
-    color: yellow;
-    font-weight: bold;
-    text-align: center;
-   text-transform: uppercase;
-   font-size: 20px;
-   color: yellow;
-   
-  
-} */ 
-/* 
-.collapse  a {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 15px;
-    text-align: center;
-    text-decoration: none;
-    margin: 10px;
-    padding: 20px;
-    color: white;
-}
-
-
-.collapse a:hover {
-    cursor: pointer;
-    color: grey;
-    text-decoration: none;
-    
-    
-} */
-
-
-
-
-
-
-/* .web{
-    display: grid;
-    grid-template-columns: auto auto auto auto ;
-    text-align: center;
-    
-} */
-
-
 
