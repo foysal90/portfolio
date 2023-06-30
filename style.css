@@ -48,6 +48,7 @@ p{
 
 .navbar{
     background-color: #40868b;
+    background-color: #33415c !important;
     padding: 1% 7%;
     text-align: center;
 }
@@ -146,6 +147,7 @@ p{
 
 .about-me{
     background-color: #39a4ac;
+    background-color: #33415c !important;
     padding: 1% 7%;
     color: white;
     text-align: center;
@@ -382,6 +384,7 @@ p{
 .achievemnet-contact{
     padding: 1% 7%;
     background-color: #39a4ac;
+    background-color: #33415c;
     color: white;
 }
 
