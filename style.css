@@ -488,13 +488,28 @@ p{
 
 
 /* project */
-/* 
+.rowso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .rowso {
+        display: block;
+        margin-left: 10px;
+    }
+  }
+
 .projects {
     margin: 60px auto;
     width: 80%;
     background: linear-gradient(90deg, rgba(2,0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100% );
 }
 
+/* 
 .font-projects {
     text-align: center;
     border: 1px solid white;
@@ -561,3 +576,8 @@ p{
     background: linear-gradient(90deg, rgba(2,0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100% );
 }
  */
+
+
+ #logo {
+    width: 100px;
+ }
