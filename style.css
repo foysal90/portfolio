@@ -488,7 +488,7 @@ p{
 
 
 /* project */
-.rowso {
+/* .rowso {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -507,7 +507,7 @@ p{
     margin: 60px auto;
     width: 80%;
     background: linear-gradient(90deg, rgba(2,0,6,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100% );
-}
+} */
 
 /* 
 .font-projects {
