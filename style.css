@@ -247,6 +247,13 @@ p{
     padding: 10px;
     text-align: center;
 }
+.card-desc {
+    text-align: center;
+    text-decoration: none;
+}
+.card-desc ol {
+    list-style: none;
+}
 
 .skills-container{
     padding-right: 45px;
