@@ -43,9 +43,20 @@ p {
   width: 100%;
 }
 
-#menu-icon{
+#menu-icon {
   display: none;
- 
+}
+.resume-btn {
+  background-color: #005288;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  border-color: #0492f1;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 /* #download {
@@ -475,28 +486,23 @@ textarea {
   clear: both;
 }
 
-
-@media (max-width:990px) {
-  #menu-icon{
+@media (max-width: 990px) {
+  #menu-icon {
     display: block;
     cursor: pointer;
-   
   }
   .material-symbols-outlined {
     color: white;
-   
-    
   }
-  .hidden{
+  .hidden {
     display: none;
   }
 
-  .navbar{
-   display: grid;
+  .navbar {
+    display: grid;
   }
-  
 }
-#bti{
+#bti {
   color: white;
 }
 /* footer ends here  */
